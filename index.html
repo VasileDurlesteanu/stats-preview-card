@@ -2,32 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   
-  <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title> Frontend Mentor | Stats preview card component</title>  
+
 </head>
 <body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
+  <main>
+    <section class="stats-section">
+      <h1>Get insights that help your business grow.</h1>
+      <p>Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+        experience, and overall efficiency.
+      </p>
+      <div class="grid-container">
+        <div class="stats-badge">
+          <p class="stats-number">10k+</p>
+          <p class="stats-name">companies</p>
+        </div>
+        <div class="stats-badge">
+          <p class="stats-number">314</p>
+          <p class="stats-name">templates</p>
+        </div>
+        <div class="stats-badge">
+          <p class="stats-number">12m+</p>
+          <p class="stats-name">queries</p>
+        </div>
+      </div>
+    </section>
+    <section class="image">
+      <img src="./images/image-header-desktop.jpg" alt="desktop image"/>
+    </section>
+  </main>   
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/VasileDurlesteanu" target="_blank">Vasile Durlesteanu</a>.
   </div>
 </body>
 </html>
