@@ -16,10 +16,8 @@
 body {
     min-height: 100vh;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
-    /* gap: 2rem; */
     background-color: var(--very-dark-blue);
     
 }
@@ -34,10 +32,21 @@ main {
     
 }
 
+.content-container {
+    max-width: 23.438rem;
+}
+
 h1 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     color: var(--white);
+    font-size: 1.875rem;
+    margin: 0 0 20px 0;
+}
+
+.insights {
+    content:'';
+    color: var(--soft-violet);
 }
 
 p {
@@ -45,13 +54,16 @@ p {
     font-weight: 400;
     font-size: 15px;
     color: var(--white-para);
+    margin: 0 0 60px 0;
+    line-height: 1.6;
 }
 
 .stats-section {
-    width: 34.375rem;
+    width: 31.25rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .image-container {
@@ -59,24 +71,38 @@ p {
     max-height:100%;   
 }
 
-.image-container .overlay {	
+.overlay {	
     display: block;
     position: absolute;
-    width: 450px;
-    height: 371.66px;
+    width: 31.25rem;
+    height: 25.81rem;
     background: var(--soft-violet);
     opacity: 0.4;
-    filter: saturate(1) contrast(150%);
-    top: 19.2rem;
+    filter: saturate(200%) contrast(200%) brightness(0.6);
+    top: 17.9rem;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
+}
+
+.overlay2 {
+    display: block;
+    position: absolute;
+    width: 31.25rem;
+    height: 25.81rem;
+    background: var(--dark-desturated-blue);
+    opacity: 0.3;
+    filter: contrast(120%);
+    top: 17.9rem;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    z-index: 10;
 }
 
 img {
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
-    height: auto;
-    width:100%;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
     display: block; /* removes extra space below image */
 }
@@ -88,13 +114,16 @@ img {
 
 .stats-name {
     font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
     text-transform: uppercase;
     color: var(--white-heading);
     margin: 0;
 }
 .stats-number {
     font-family: 'Lexend Deca', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
     color: var(--white);
-    font-size: 28px;
     margin: 0;
 }
