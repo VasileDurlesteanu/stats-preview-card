@@ -23,10 +23,10 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 
 ### Screenshots
-- Desktop
+### Desktop
 ![](./images/solutions/stats-preview-desktop.png)
 
-- Mobile
+### Mobile
 ![](./images/solutions/stat-preview-card-mobile.png)
 
 ### Links
