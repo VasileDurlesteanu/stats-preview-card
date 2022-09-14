@@ -127,3 +127,44 @@ img {
     color: var(--white);
     margin: 0;
 }
+
+@media (min-width: 375px) and (max-width: 1040px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        grid-template-columns: none;
+        height: 750px;
+        max-height: none;
+        max-width: 350px;
+        contain: content;
+        border-radius: 7px;
+    }
+
+    img, .overlay, .overlay2 {
+        top: 0;
+        width: 350px;
+        height: 250px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    .stats-section {
+        max-width: 300px;
+    }
+
+    .content-container {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: none;
+        flex-direction: column;
+    }
+}
