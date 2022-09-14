@@ -39,8 +39,12 @@
       </div>
     </section>
     <section class="image-container">
+      <picture>
+        <source media="(min-width: 1040px)" srcset="./images/image-header-desktop.jpg">
+        <source media="(max-width: 1039px)" srcset="./images/image-header-mobile.jpg">
+        <img src="./images/image-header-desktop.jpg" alt="Ladies in office">
+      </picture>
 
-      <img src="./images/image-header-desktop.jpg" alt="desktop image"/>
       <div class="overlay">
       </div>
       <div class="overlay2">
@@ -48,10 +52,10 @@
       
     </section>
   </main>   
-<!-- PLACE THE ATTRIBUTION AS FOOTER -->
-  <!-- <div class="attribution">
+
+  <footer>
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/VasileDurlesteanu" target="_blank">Vasile Durlesteanu</a>.
-  </div> -->
+  </footer>
 </body>
 </html>

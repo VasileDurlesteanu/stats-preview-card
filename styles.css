@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: var(--very-dark-blue);
-    
+    flex-direction: column;
 }
 
 main {
@@ -79,7 +79,7 @@ p {
     background: var(--soft-violet);
     opacity: 0.4;
     filter: saturate(200%) contrast(200%) brightness(0.6);
-    top: 17.9rem;
+    top: 14.2rem;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
 }
@@ -92,7 +92,7 @@ p {
     background: var(--dark-desturated-blue);
     opacity: 0.3;
     filter: contrast(120%);
-    top: 17.9rem;
+    top: 14.2rem;
     border-top-right-radius: 7px;
     border-bottom-right-radius: 7px;
     z-index: 10;
@@ -126,4 +126,76 @@ img {
     font-weight: bold;
     color: var(--white);
     margin: 0;
+}
+
+footer, a {
+    margin-top:100px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--white-heading);
+    text-decoration: none;
+}
+
+@media (min-width: 375px) and (max-width: 1040px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        grid-template-columns: none;
+        height: 800px;
+        max-height: none;
+        max-width: 350px;
+        margin-top: 75px;
+        contain: content;
+        border-radius: 7px;
+    }
+
+    img {
+        height: 250px;
+        border-bottom-right-radius: 0;
+    }
+
+    .overlay, .overlay2 {
+        top: 0;
+        width: 350px;
+        height: 250px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
+    h1 {
+        margin: 30px 0;
+    }
+
+    p {
+        margin: 0 0 40px 0;
+        width: 270px;
+        align-self: center;
+    }
+
+    .stats-section {
+        max-width: 300px;
+    }
+
+    .stats-name {
+        margin: 0 0 25px 0;
+    }
+
+    .content-container {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: none;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
